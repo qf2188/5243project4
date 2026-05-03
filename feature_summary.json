@@ -1,0 +1,75 @@
+{
+  "input_file": "/Users/caroline/Desktop/flight_delay_clean_2025_Q1.csv",
+  "target_column": "ARR_DEL15",
+  "prediction_stage": "post_departure",
+  "row_count_after_target_filter": 1784397,
+  "train_shape_raw": [
+    1427517,
+    18
+  ],
+  "test_shape_raw": [
+    356880,
+    18
+  ],
+  "train_shape_processed": [
+    1427517,
+    6214
+  ],
+  "test_shape_processed": [
+    356880,
+    6214
+  ],
+  "numeric_features": [
+    "MONTH",
+    "DAY_OF_MONTH",
+    "ORIGIN_AIRPORT_ID",
+    "DEST_AIRPORT_ID",
+    "CRS_DEP_TIME",
+    "DEP_DELAY",
+    "CRS_ARR_TIME",
+    "CANCELLED",
+    "DIVERTED",
+    "DISTANCE",
+    "DAY_OF_WEEK",
+    "IS_WEEKEND",
+    "CRS_DEP_COS",
+    "CRS_ARR_SIN",
+    "CRS_ARR_COS"
+  ],
+  "categorical_features": [
+    "OP_UNIQUE_CARRIER",
+    "ROUTE",
+    "DISTANCE_BUCKET"
+  ],
+  "engineered_features": [
+    "ROUTE",
+    "DAY_OF_WEEK",
+    "IS_WEEKEND",
+    "CRS_DEP_SIN",
+    "CRS_DEP_COS",
+    "CRS_ARR_SIN",
+    "CRS_ARR_COS",
+    "DISTANCE_BUCKET"
+  ],
+  "dropped_leakage_columns": [
+    "ARR_DELAY",
+    "FLIGHT_STATUS",
+    "IS_EXTREME_DELAY"
+  ],
+  "dropped_for_multicollinearity": [
+    "DEP_HOUR",
+    "CRS_DEP_SIN"
+  ],
+  "high_correlation_pairs": [
+    {
+      "feature_1": "CRS_DEP_TIME",
+      "feature_2": "DEP_HOUR",
+      "correlation": 0.9993
+    },
+    {
+      "feature_1": "CRS_DEP_TIME",
+      "feature_2": "CRS_DEP_SIN",
+      "correlation": 0.9008
+    }
+  ]
+}
