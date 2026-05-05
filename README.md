@@ -1,5 +1,15 @@
 # STAT 5243 Project 4: U.S. Flight Delay Analysis and Prediction
 
+This project also includes an optional Shiny web application:
+
+- `app.R`
+
+The app provides an interactive way to view selected project results and supports the optional interactive product component of the project.
+
+The app can be accessed here:
+
+[Shiny App Link](https://zhuyunj.shinyapps.io/5243project4/)
+
 ## 1. Project Overview
 
 This project is an end-to-end machine learning project for STAT 5243. We analyze U.S. domestic flight on-time performance data from January to March 2025. The main goal of this project is to understand patterns in flight delays and build supervised machine learning models to predict whether a flight is likely to experience an arrival delay.
@@ -70,6 +80,12 @@ The main code files, raw data files, cleaned datasets, processed modeling files,
 ├── processed_feature_names.csv
 ├── preprocessing_pipeline.joblib
 ├── feature_summary.json
+├── 5243 project4.pptx
+├── app.R
+└── rsconnect/
+    └── shinyapps.io/
+        └── zhuyunj/
+            └── 5243project4.dcf
 │
 └── outputs/
     ├── airportid1.csv
@@ -176,6 +192,11 @@ Main outputs:
 * `outputs/confusion_matrix_xgboost.png`
 * `outputs/roc_curve_xgboost.png`
 * `outputs/precision_recall_curve_xgboost.png`
+
+### 6.5 `5243 project4.pptx`
+
+This file contains the final presentation slides for the project. The slides summarize the project goal, dataset, data cleaning process, exploratory analysis, unsupervised learning insights, feature engineering, supervised modeling results, final model evaluation, and main conclusions. This file is used for the oral presentation component of the project.
+
 
 ## 7. Required Packages
 
